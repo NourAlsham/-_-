@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; 
+    
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.book-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+#books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.book-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: calc(33.333% - 20px); 
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-item h3 {
+    color: #333;
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.book-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.book-item p {
+    margin: 5px 0;
+    flex-grow: 1;
+}
+
+.book-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+}
+
+.book-item a:hover {
+    background-color: #555;
+}
+
+
+@media (max-width: 768px) {
+    .book-item {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .book-item {
+        width: 100%; 
+    }
+}

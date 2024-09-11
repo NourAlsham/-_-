@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبة Al_Sana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>مكتبة Al_Sana</h1>
+        <nav>
+            <button id="showAddBook">إضافة كتاب</button>
+            <button id="showBookList">عرض الكتب</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="addBookSection" style="display: none;">
+            <h2>إضافة كتاب جديد إلى مكتبة Al_Sana</h2>
+            <form id="addBookForm">
+                <input type="text" id="title" name="title" placeholder="عنوان الكتاب" required>
+                <input type="text" id="author" name="author" placeholder="اسم المؤلف" required>
+                <textarea id="description" name="description" placeholder="وصف الكتاب" required></textarea>
+                <input type="file" id="image" name="image" accept="image/*" required>
+                <input type="file" id="bookFile" name="bookFile" accept=".pdf,.epub,.mobi" required>
+                <button type="submit">إضافة الكتاب إلى Al_Sana</button>
+            </form>
+        </section>
+
+        <section id="bookListSection">
+            <h2>قائمة الكتب في مكتبة Al_Sana</h2>
+            <div id="books"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 مكتبة Al_Sana. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
